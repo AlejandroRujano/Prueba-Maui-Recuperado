@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueba_Maui.Views.AgregarEditarContacto"
+             Title="AgregarEditarContacto"  
+             Shell.NavBarIsVisible="False"
+             >
+    <VerticalStackLayout>
+        <Label 
+            x:Name="LabelDePrueba"
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button
+            x:Name="btnRegresar"
+            Padding="0"
+            Clicked="btnRegresar_Clicked"
+            Text="←"
+            FontSize="90"
+            >
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
