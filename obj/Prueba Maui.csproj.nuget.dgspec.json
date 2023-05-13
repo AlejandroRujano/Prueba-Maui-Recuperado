@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba Maui.csproj": {}
+    "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-Recuperado\\Prueba-Maui-Recuperado\\Prueba Maui.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba Maui.csproj": {
+    "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-Recuperado\\Prueba-Maui-Recuperado\\Prueba Maui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba Maui.csproj",
+        "projectUniqueName": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-Recuperado\\Prueba-Maui-Recuperado\\Prueba Maui.csproj",
         "projectName": "Prueba Maui",
-        "projectPath": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba Maui.csproj",
+        "projectPath": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-Recuperado\\Prueba-Maui-Recuperado\\Prueba Maui.csproj",
         "packagesPath": "C:\\Users\\aleja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\Prueba-Maui-5ff4597ff0028c2fbac06e450098b5f2e89dfa0f\\obj\\",
+        "outputPath": "C:\\Users\\aleja\\Source\\Repos\\Prueba-Maui-Recuperado\\Prueba-Maui-Recuperado\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
