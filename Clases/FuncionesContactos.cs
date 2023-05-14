@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,19 @@ namespace Prueba_Maui.Clases
         private static bool _btnPresionado = false;
         public static bool BtnPresionado { get { return _btnPresionado; } set { _btnPresionado = value; } }
         public static List<Contacto> ListaOriginal { get { return _listaDeContactosOriginal;} set {  _listaDeContactosOriginal = value; } }
+        public static void GuardarJsonContactos()
+        {
+            var JsonContactos = JsonConvert.SerializeObject(_listaDeContactosOriginal.ToArray(), Formatting.Indented);
+            File.WriteAllText("@ContactosJSON",JsonContactos);
+        }
         public static void LeerJsonContactos()
         {
+            try
+            {
+                _listaDeContactosOriginal = JsonConvert.DeserializeObject<List<Contacto>>(File.ReadAllText("@ContactosJSON"));
+            }
+            catch { };
+
             _listaDeContactosOriginal.Clear();
             _listaDeContactosOriginal.Add(new Contacto("Luis","Galindez","Editor","a@gmail.com",24456,_listaDeContactosOriginal.Count+1));
             _listaDeContactosOriginal.Add(new Contacto("Chupa", "Paletas", "ApodoXd", "b@gmail.com", 36656, _listaDeContactosOriginal.Count + 1));

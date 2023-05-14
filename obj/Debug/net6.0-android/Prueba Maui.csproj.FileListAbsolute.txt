@@ -3833,3 +3833,4 @@ C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resiz
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\sp\drawable\maui_splash_image.xml
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\sp\values\maui_colors.xml
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\F7B9BBA4792A9F04-files.cache
+C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
