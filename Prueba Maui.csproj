@@ -91,6 +91,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\contacto.png" />
+	  <None Remove="Resources\Images\lista1Contactos.png" />
+	  <None Remove="Resources\Images\lista2Contactos.png" />
+	  <None Remove="Resources\Images\lista3Contactos.png" />
 	  <None Remove="Resources\Images\lupa2.png" />
 	  <None Remove="Resources\Images\silueta.png" />
 	  <None Remove="Resources\Images\sobre.png" />

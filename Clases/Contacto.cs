@@ -25,7 +25,7 @@ namespace Prueba_Maui.Clases
             _numeroTelefonico = 0;
             _pathImagen = "";
         }
-        public Contacto(string nombre, string apellido, string apodo, string correo, long numeroTelefonico, int id)
+        public Contacto(string nombre, string apellido, string apodo, string correo, long numeroTelefonico, int id, string UltimoTonoImagen)
         {
             _id = id;
             _nombre = nombre;
@@ -33,13 +33,17 @@ namespace Prueba_Maui.Clases
             _apodo = apodo;
             _correo = correo;
             _numeroTelefonico = numeroTelefonico;
-            if(id % 2 == 0) 
+            if(UltimoTonoImagen == "" || UltimoTonoImagen == @"lista3contactos.png")
             {
-                _pathImagen = @"contacto.png";
+                _pathImagen = @"lista1contactos.png";
             }
-            else
+            else if(UltimoTonoImagen == @"lista1contactos.png") 
             {
-                _pathImagen = @"silueta.png";
+                _pathImagen = @"lista2contactos.png";
+            }
+            else if(UltimoTonoImagen == @"lista2contactos.png")
+            {
+                _pathImagen = @"lista3contactos.png";
             }
         }
         public int Id { get { return _id; } set { _id = value; } }
