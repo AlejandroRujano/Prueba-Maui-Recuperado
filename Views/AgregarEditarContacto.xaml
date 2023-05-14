@@ -8,18 +8,19 @@
              >
     <VerticalStackLayout>
         <Button
+            Padding="10,-25,14,-10"
             x:Name="btnRegresar"
             Clicked="btnRegresar_Clicked"
-            Text="Atras"
+            Text="←"
             FontAttributes="Bold"
-            FontSize="12"
+            FontSize="30"
             BorderColor="DarkSlateBlue" 
             BorderWidth="3"
-            CornerRadius="20"
+            CornerRadius="40"
             BackgroundColor="DarkSlateBlue" 
             TextColor="White"
-            HeightRequest="55"
-            WidthRequest="85"
+            HeightRequest="35"
+            WidthRequest="70"
             HorizontalOptions="Start"
             Margin="10,10,0,0"
             >
