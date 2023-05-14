@@ -38,4 +38,9 @@ public partial class MainContactos : ContentPage
         }
         CollectionViewContactos.SelectedItem = null;
     }
+
+    private void entryBusqueda_TextChanged(object sender, TextChangedEventArgs e)
+    {
+
+    }
 }

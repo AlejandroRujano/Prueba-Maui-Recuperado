@@ -12,7 +12,6 @@ public partial class AgregarEditarContacto : ContentPage
 		InitializeComponent();
 	}
 
-
 	public string ContactoId
 	{
 		set

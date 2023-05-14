@@ -21,11 +21,13 @@
                     </Border.StrokeShape>
                     <Grid ColumnDefinitions="*,auto" RowDefinitions="*" ColumnSpacing="12" Padding="24">
                         <Entry
+                            x:Name="entryBusqueda"
                             BackgroundColor="White" 
                             HeightRequest="40" 
                             Placeholder="Buscar Contacto"
                             Grid.Column="0"
                             TextColor="Black"
+                            TextChanged="entryBusqueda_TextChanged" 
                             >
                         </Entry>
                         <Image 
