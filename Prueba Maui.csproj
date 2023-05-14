@@ -90,7 +90,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\contacto.png" />
 	  <None Remove="Resources\Images\lupa2.png" />
+	  <None Remove="Resources\Images\silueta.png" />
+	  <None Remove="Resources\Images\sobre.png" />
+	  <None Remove="Resources\Images\telefono.png" />
 	</ItemGroup>
 
 	<ItemGroup>

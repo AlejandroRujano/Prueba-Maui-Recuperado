@@ -3825,3 +3825,7 @@ C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\stamp
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\r\drawable\contacto.png
+C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\r\drawable\silueta.png
+C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\r\drawable\sobre.png
+C:\Users\Fran\source\repos\Prueba-Maui-Recuperado\obj\Debug\net6.0-android\resizetizer\r\drawable\telefono.png
