@@ -20,9 +20,16 @@ public partial class AgregarEditarContacto : ContentPage
 			if (Convert.ToInt32(value) != -1)
 			{
                 _contacto = Funciones.BuscarContacto(Convert.ToInt32(value));
+				lblNombreCompleto.Text = $"{_contacto.Nombre} {_contacto.Apellido}";
+				entryNombre.Text = _contacto.Nombre;
+				entryApellido.Text = _contacto.Apellido;
+				entryApodo.Text = _contacto.Apodo;
+				entryTelefono.Text = _contacto.NumeroTelefonico.ToString();
+				entryCorreo.Text = _contacto.Correo;
             }
 			else
 			{
+				lblNombreCompleto.Text = "Agregar Contacto";
 			}
 		}
 	}

@@ -4,42 +4,45 @@
              x:Class="Prueba_Maui.Views.AgregarEditarContacto"
              Title="Editar"
              Shell.NavBarIsVisible="False"
+             BackgroundColor="White"
              >
     <VerticalStackLayout>
         <Button
             x:Name="btnRegresar"
             Clicked="btnRegresar_Clicked"
             Text="Atras"
-            Margin="0,10,270,-55"
             FontAttributes="Bold"
-            FontSize="10"
+            FontSize="12"
             BorderColor="DarkSlateBlue" 
             BorderWidth="3"
             CornerRadius="20"
             BackgroundColor="DarkSlateBlue" 
             TextColor="White"
-            HeightRequest="35"
-            WidthRequest="65"
+            HeightRequest="55"
+            WidthRequest="85"
+            HorizontalOptions="Start"
+            Margin="10,10,0,0"
             >
         </Button>
         <Image 
-            Margin="30,30,30,0"   
+            Margin="30,10,30,10"   
             Source="contacto.png"
             HeightRequest="150"
             WidthRequest="150"
             Aspect="AspectFill"
          >
         </Image>
-        <Label 
+        <Label
             HorizontalTextAlignment="Center"
             VerticalTextAlignment="Center"
+            TextColor="Black"
             Text="Nombre de contacto"
             FontSize="20"
+            x:Name="lblNombreCompleto"
             >
         </Label>
-        <Grid ColumnDefinitions="auto,*" RowDefinitions="auto,auto,auto,auto,auto,auto">
+        <Grid ColumnDefinitions="50,*" RowDefinitions="auto,auto,auto,auto,auto,auto" RowSpacing="10" Margin="10,20,10,10">
             <Image 
-                Margin="10,20,3,1"
                 Source="silueta.png"
                 HeightRequest="30"
                 WidthRequest="30"
@@ -48,7 +51,6 @@
              >
             </Image>
             <Image 
-                Margin="10,-5,3,1"
                 Source="telefono.png"
                 HeightRequest="30"
                 WidthRequest="30"
@@ -58,7 +60,6 @@
              >
             </Image>
             <Image 
-                Margin="10,-5,3,1"
                 Source="sobre.png"
                 HeightRequest="30"
                 WidthRequest="30"
@@ -67,7 +68,7 @@
                 Grid.Row="4"
              >
             </Image>
-            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="0" Margin="10,30,30,10">
+            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="0">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20">
                     </RoundRectangle>
@@ -78,15 +79,17 @@
                         </RoundRectangle>
                     </Border.StrokeShape>
                     <Entry 
-                            Margin="20,10,50,10"
-                            BackgroundColor="White" 
-                            HeightRequest="40" 
-                            Placeholder="Nombre"
+                        Margin="20,10,50,10"
+                        BackgroundColor="White" 
+                        HeightRequest="40" 
+                        Placeholder="Nombre"
+                        x:Name="entryNombre"
+                        TextColor="Black"
                             >
                     </Entry>
                 </Border>
             </Border>
-            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="1" Margin="10,3,30,10">
+            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="1">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20">
                     </RoundRectangle>
@@ -101,12 +104,14 @@
                             BackgroundColor="White" 
                             HeightRequest="40" 
                             Placeholder="Apellido"
+                            x:Name="entryApellido"
+                            TextColor="Black"
                             >
                         </Entry>
                     </Grid>
                 </Border>
             </Border>
-            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="2" Margin="10,3,30,10">
+            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="2">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20">
                     </RoundRectangle>
@@ -121,12 +126,14 @@
                             BackgroundColor="White" 
                             HeightRequest="40" 
                             Placeholder="Apodo"
+                            x:Name="entryApodo"
+                            TextColor="Black"
                             >
                         </Entry>
                     </Grid>
                 </Border>
             </Border>
-            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="3" Margin="6,3,30,10">
+            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="3">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20">
                     </RoundRectangle>
@@ -136,17 +143,18 @@
                         <RoundRectangle CornerRadius="20,20,20,20">
                         </RoundRectangle>
                     </Border.StrokeShape>
-
                     <Entry 
                         Margin="20,10,50,10"
                         BackgroundColor="White" 
                         HeightRequest="40" 
                         Placeholder="Numero de Telefono"
+                        x:Name="entryTelefono"
+                        TextColor="Black"
                         >
                     </Entry>
                 </Border>
             </Border>
-            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="4" Margin="6,3,30,10">
+            <Border Grid.Column="1" BackgroundColor="DarkSlateBlue" Padding="0" Stroke="#E3EBF4" HeightRequest="65" Grid.Row="4">
                 <Border.StrokeShape>
                     <RoundRectangle CornerRadius="20,20,20,20">
                     </RoundRectangle>
@@ -156,30 +164,32 @@
                         <RoundRectangle CornerRadius="20,20,20,20">
                         </RoundRectangle>
                     </Border.StrokeShape>
-
                     <Entry 
                         Margin="20,10,50,10"
                         BackgroundColor="White" 
                         HeightRequest="40" 
                         Placeholder="Correo"
+                        x:Name="entryCorreo"
+                        TextColor="Black"
                         >
                     </Entry>
                 </Border>
             </Border>
             <Button
-                Grid.Column="1"
+                Grid.Column="0"
                 Grid.Row="5"
                 Text="Guardar"
-                Margin="-50,5,-20,0"
+                Grid.ColumnSpan="2"
                 FontAttributes="Bold"
-                FontSize="10"
+                FontSize="12"
                 BorderColor="DarkSlateBlue" 
                 BorderWidth="3"
                 CornerRadius="20"
                 BackgroundColor="DarkSlateBlue" 
                 TextColor="White"
-                HeightRequest="35"
-                WidthRequest="70"
+                HeightRequest="55"
+                WidthRequest="95"
+                Margin="10"
                 >
             </Button>
         </Grid>

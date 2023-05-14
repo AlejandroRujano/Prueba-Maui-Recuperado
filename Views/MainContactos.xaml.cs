@@ -6,7 +6,7 @@ public partial class MainContactos : ContentPage
 {
 	//private List<Contacto> _listaDeContactos = new List<Contacto>();
     private ObservableCollection<Contacto> _listaDeContactos;
-	private int Contador = 0;
+	//private int Contador = 0;
 	public MainContactos()
 	{
 		InitializeComponent();
