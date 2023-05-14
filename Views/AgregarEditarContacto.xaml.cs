@@ -20,11 +20,9 @@ public partial class AgregarEditarContacto : ContentPage
 			if (Convert.ToInt32(value) != -1)
 			{
                 _contacto = Funciones.BuscarContacto(Convert.ToInt32(value));
-                LabelDePrueba.Text = $"Nombre: {_contacto.Nombre},  Apellido: {_contacto.Apellido}";
             }
 			else
 			{
-				LabelDePrueba.Text = "Crear Contacto";
 			}
 		}
 	}
