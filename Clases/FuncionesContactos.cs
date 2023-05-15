@@ -27,9 +27,15 @@ namespace Prueba_Maui.Clases
             catch { };
 
             _listaDeContactosOriginal.Clear();
-            _listaDeContactosOriginal.Add(new Contacto("Luis","Galindez","Editor","a@gmail.com",24456,_listaDeContactosOriginal.Count+1));
-            _listaDeContactosOriginal.Add(new Contacto("Chupa", "Paletas", "ApodoXd", "b@gmail.com", 36656, _listaDeContactosOriginal.Count + 1));
-            _listaDeContactosOriginal.Add(new Contacto("Super", "Man", "SuperMan", "c@gmail.com", 75862, _listaDeContactosOriginal.Count + 1));
+            //Al primer contacto se le debe pasar como parametro un string vacio
+            _listaDeContactosOriginal.Add(new Contacto("Luis","Galindez","Editor","a@gmail.com",24456,_listaDeContactosOriginal.Count+1,""));
+
+            for(int i=0; i<5 ; i++)
+            {
+                _listaDeContactosOriginal.Add(new Contacto("Chupa", "Paletas", "ApodoXd", "b@gmail.com", 36656, _listaDeContactosOriginal.Count + 1, _listaDeContactosOriginal[_listaDeContactosOriginal.Count - 1].PathImagen));
+                _listaDeContactosOriginal.Add(new Contacto("Super", "Man", "SuperMan", "c@gmail.com", 75862, _listaDeContactosOriginal.Count + 1, _listaDeContactosOriginal[_listaDeContactosOriginal.Count - 1].PathImagen));
+                _listaDeContactosOriginal.Add(new Contacto("Luis", "Galindez", "Editor", "a@gmail.com", 24456, _listaDeContactosOriginal.Count + 1, _listaDeContactosOriginal[_listaDeContactosOriginal.Count - 1].PathImagen));
+            }   
         }
         public static Contacto BuscarContacto(int id)
         {
