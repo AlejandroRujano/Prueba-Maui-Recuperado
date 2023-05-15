@@ -48,11 +48,19 @@
             <CollectionView x:Name="CollectionViewContactos" x:DataType="model:Contacto" Grid.Row="2" SelectionMode="Single" SelectionChanged="CollectionViewContactos_SelectionChanged">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
+<<<<<<< HEAD
                         <Grid ColumnDefinitions="auto,auto,auto,auto" RowDefinitions="*" Padding="4" Margin="20">
                             <Image Source="ListaContactos" Grid.Column="0" HeightRequest="25" WidthRequest="25" Margin="0,0,12,0"></Image>
                             <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0" FontSize="16" Padding="2,4,3,4" TextColor="Black"></Label>
                             <Label Text="{Binding Apellido}" Grid.Column="2" Grid.Row="0" FontSize="16" Padding="2,4,3,4" TextColor="Black"></Label>
                             <Label Text="{Binding Apodo}" Grid.Column="3" Grid.Row="0" FontSize="16" Padding="2,4,3,4" TextColor="DarkSlateBlue"></Label>
+=======
+                        <Grid ColumnDefinitions="auto,auto,auto,auto" RowDefinitions="*" Padding="4" Margin="20,15,20,15">
+                            <Image Source="{Binding PathImagen}" Grid.Column="0" HeightRequest="35" WidthRequest="35" Margin="0,0,12,0" VerticalOptions="Center"></Image>
+                            <Label Text="{Binding Nombre}" Grid.Column="1" Grid.Row="0" FontSize="16" Padding="3" TextColor="Black" VerticalOptions="Center"></Label>
+                            <Label Text="{Binding Apellido}" Grid.Column="2" Grid.Row="0" FontSize="16" Padding="3" TextColor="Black" VerticalOptions="Center"></Label>
+                            <Label Text="{Binding Apodo}" Grid.Column="3" Grid.Row="0" FontSize="16" Padding="3" TextColor="DarkSlateBlue" VerticalOptions="Center"></Label>
+>>>>>>> 68b1d6f92bdbd884271349b9eb666edc8812a053
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
