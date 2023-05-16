@@ -37,6 +37,10 @@ namespace Prueba_Maui.Clases
                 _listaDeContactosOriginal.Add(new Contacto("Luis", "Galindez", "Editor", "a@gmail.com", 24456, _listaDeContactosOriginal.Count + 1, _listaDeContactosOriginal[_listaDeContactosOriginal.Count - 1].PathImagen));
             }   
         }
+
+        public static List<Contacto> ObtenerContactos() => _listaDeContactosOriginal;
+        
+
         public static Contacto BuscarContacto(int id)
         {
             Contacto _contactoBuscado = new Contacto();

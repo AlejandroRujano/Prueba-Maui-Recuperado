@@ -27,7 +27,8 @@
                             Placeholder="Buscar Contacto"
                             Grid.Column="0"
                             TextColor="Black"
-                            TextChanged="entryBusqueda_TextChanged" 
+                            TextChanged="entryBusqueda_TextChanged"
+                           
                             >
                         </Entry>
                         <Image 

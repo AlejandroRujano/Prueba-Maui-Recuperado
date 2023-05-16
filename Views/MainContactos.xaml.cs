@@ -1,4 +1,6 @@
 //using Java.Lang;
+using Microsoft.Maui.ApplicationModel.Communication;
+using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Internals;
 using Prueba_Maui.Clases;
 using System.Collections.ObjectModel;
@@ -43,6 +45,11 @@ public partial class MainContactos : ContentPage
 
     private void entryBusqueda_TextChanged(object sender, TextChangedEventArgs e)
     {
+        //string textoBusqueda = ((Entry)sender).Text;
+
+        //var listaDeContactosFiltrados = new ObservableCollection<Contact>(_listaDeContactos.Where(contacto => contacto.Nombre.Contains(textoBusqueda)));
+
+        //CollectionViewContactos.ItemsSource = listaDeContactosFiltrados;
 
     }
 }
