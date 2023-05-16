@@ -15,7 +15,6 @@ public partial class MainContactos : ContentPage
 
         Funciones.LeerJsonContactos();
         _listaDeContactos = new ObservableCollection<Contacto>(Funciones.ListaOriginal);
-
         //_listaDeContactos = Funciones.ListaOriginal;
 		CollectionViewContactos.ItemsSource = _listaDeContactos;
 	}
